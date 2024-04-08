@@ -1,6 +1,6 @@
 from crewai import Agent
 
-from tools.browser_tools import BrowserTools
+#from tools.browser_tools import BrowserTools
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
 from tools.sec_tools import SECTools
@@ -18,7 +18,7 @@ class StockAnalysisAgents():
       strategies that is working for a super important customer.""",
       verbose=True,
       tools=[
-        BrowserTools.scrape_and_summarize_website,
+        #BrowserTools.scrape_and_summarize_website,
         SearchTools.search_internet,
         CalculatorTools.calculate,
         SECTools.search_10q,
@@ -37,7 +37,7 @@ class StockAnalysisAgents():
       important customer""",
       verbose=True,
       tools=[
-        BrowserTools.scrape_and_summarize_website,
+        #BrowserTools.scrape_and_summarize_website,
         SearchTools.search_internet,
         SearchTools.search_news,
         YahooFinanceNewsTool(),
@@ -57,7 +57,7 @@ class StockAnalysisAgents():
       a super important customer you need to impress.""",
       verbose=True,
       tools=[
-        BrowserTools.scrape_and_summarize_website,
+        #BrowserTools.scrape_and_summarize_website,
         SearchTools.search_internet,
         SearchTools.search_news,
         CalculatorTools.calculate,

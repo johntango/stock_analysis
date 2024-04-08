@@ -22,7 +22,7 @@ class StockAnalysisTasks():
         Make sure to use the most recent data as possible.
   
         Selected company by the customer: {company}
-      """),
+      """), expected_output='Return recommendations for the stock.',
       agent=agent
     )
     
@@ -43,7 +43,7 @@ class StockAnalysisTasks():
         market scenario.{self.__tip_section()}
 
         Make sure to use the most recent data possible.
-      """),
+      """),expected_output='Detailed analysis of the stock.',
       agent=agent
     )
 
@@ -62,7 +62,7 @@ class StockAnalysisTasks():
         including any red flags or positive indicators for
         your customer.
         {self.__tip_section()}        
-      """),
+      """),expected_output='Detailed analysis of the filings of the stock.',
       agent=agent
     )
 
@@ -85,7 +85,7 @@ class StockAnalysisTasks():
         clear investment stance and strategy with supporting evidence.
         Make it pretty and well formatted for your customer.
         {self.__tip_section()}
-      """),
+      """),expected_output='Synthesize all of the analyses of the stock.',
       agent=agent
     )
 
